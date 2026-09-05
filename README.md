@@ -1,8 +1,7 @@
 
 # TTCTech Company — IT Exam (Frontend)
 
-Vue frontend for a single-choice IT exam application, consuming the
-`ExampleCompany.Exam.Api` backend.
+Vue frontend for a single-choice exam application.
 
 <img width="1763" height="985" alt="Screenshot_5-9-2026_162625_localhost" src="https://github.com/user-attachments/assets/262b0075-9443-434c-9aae-ff1f243fd94a" />
 <img width="1763" height="853" alt="Screenshot_5-9-2026_162652_localhost" src="https://github.com/user-attachments/assets/72fb262f-eb97-4c7c-aea7-06902c84dbd7" />
