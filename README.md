@@ -1,4 +1,4 @@
-<<<<<<< Updated upstream
+
 # TTCTech Company — IT Exam (Frontend)
 
 Vue frontend for a single-choice IT exam application, consuming the
