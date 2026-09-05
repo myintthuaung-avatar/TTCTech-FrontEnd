@@ -160,10 +160,6 @@ Outputs static assets to `dist/`. Update `VITE_API_BASE_URL` in
   until the name field is filled in and every question has a selection —
   mirroring the backend's own validation of `examineeName`.
 =======
-# interview-question-010
-
-ระบบสอบออนไลน์ (IT 10-1 / IT 10-2) — Vue 3 + Vuetify 3
-
 ## Stack
 
 - Vue 3.5 (`<script setup>`)
@@ -184,27 +180,3 @@ Build for production:
 ```bash
 npm run build
 npm run preview
-```
-
-## How it maps to the spec
-
-- **IT 10-1** (`src/views/ExamView.vue`): ชื่อ-สกุล field + 2 single-choice
-  questions (`v-radio-group`, one answer per question). "ส่งข้อสอบ" grades
-  the attempt, saves it, and navigates to the result page.
-- **IT 10-2** (`src/views/ResultView.vue`): shows the name, each answer with
-  correct/incorrect marker, and `คุณ {name} สอบได้คะแนน : {score}/{total}`.
-  "สอบอีกครั้ง" clears state and returns to IT 10-1 for a fresh attempt.
-- **Data**: questions are mocked in `src/mock/questions.js`. Submissions are
-  persisted through `src/mock/examDb.js`, a small repository that currently
-  writes to `localStorage` so the app runs standalone. Swap that one file
-  for a real `fetch`/`axios` call to a backend API without touching any
-  component — `examStore.js` only depends on `examDb.saveSubmission()`.
-
-## Before submitting to GitLab
-
-1. Create a repo named `interview-question-<your-number>` on gitlab.com.
-2. Update `package.json`'s `name` and any URLs to match `example.com`
-   conventions if your interview packet asks for it explicitly.
-3. `git init && git add -A && git commit -m "IT 10-1/10-2 exam app"`, add
-   the GitLab remote, and push.
->>>>>>> Stashed changes
